@@ -2,6 +2,8 @@
 const { defineConfig, devices } = require('@playwright/test');
 
 // Read environment variables from file.
+require('dotenv').config({ path: './test-data/.env' });
+//in case the file is at project directory.
 require('dotenv').config();
 
 /**
